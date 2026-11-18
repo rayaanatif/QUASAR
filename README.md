@@ -54,6 +54,8 @@ Layout features:
 - Plated, grounded M3 mounting holes for a thermal and electrical path into the structure
 - Silkscreen artwork: a Voyager-inspired scene on the top, a Golden Record-style plaque on the bottom
 
+*Top silkscreen adapted from a NASA/ESA Voyager illustration.*
+
 ![All layers](images/transceiver/trx_all_layers.png)
 
 | Layer 1 - top / RF | Layer 2 - ground |
