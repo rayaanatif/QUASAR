@@ -25,8 +25,8 @@ QUASAR is an independent project by Rayaan Atif, an Engineering and Physics stud
 | Telemetry | PA current (INA180 + 0.1 Ω shunt), supply voltage, PA and board temperature (NTCs), forward-power detector, antenna isolated-port detector |
 | Safety | PA power through a TPS2065C load switch: off by default, with a hardware TX_INHIBIT line that overrides the MCU |
 | Reliability | MAX6369 external watchdog, status LED |
-| Interfaces | 16-pin OBC header (5 V, I2C, UART, TX_INHIBIT, NRST), 10-pin SWD, antenna-board detect port |
-| PCB | 4-layer, ~85 x 45 mm, JLCPCB JLC04161H-7628 impedance-controlled stack-up |
+| Interfaces | Hirose U.FL antenna port, 16-pin OBC header (5 V, I2C, UART, TX_INHIBIT, NRST), 10-pin SWD, antenna-board detect port |
+| PCB | 4-layer, ~85 x 47 mm, four plated M3 mounting holes, JLCPCB JLC04161H-7628 impedance-controlled stack-up |
 
 ## Schematic
 
@@ -50,6 +50,11 @@ Layout features:
 - Via array under the PA's exposed pad plus a ring of thermal vias for heat spreading
 - Transmit and receive paths kept physically separate
 - Wide, multi-via feed for the PA supply
+- Low-profile U.FL antenna connector with grounded pads and fence vias up to the connector
+- Plated, grounded M3 mounting holes for a thermal and electrical path into the structure
+- Silkscreen artwork: a Voyager-inspired scene on the top, a Golden Record-style plaque on the bottom
+
+![All layers](images/transceiver/trx_all_layers.png)
 
 | Layer 1 - top / RF | Layer 2 - ground |
 |---|---|
