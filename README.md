@@ -42,7 +42,9 @@ The two boards stack into a single unit for one 87 x 87 mm face of a CubeSat:
 
 A complete 70 cm satellite radio on an 85 x 47 mm board: sub-GHz SoC, 2 W power amplifier, filtered TX and RX chains, full health telemetry and a hardware transmit interlock.
 
-![QUASAR transceiver, 3D view](images/transceiver/trx_3d_top.png)
+| Top | Bottom |
+|---|---|
+| ![QUASAR transceiver, top](images/transceiver/trx_3d_top.png) | ![QUASAR transceiver, bottom](images/transceiver/trx_3d_bottom.png) |
 
 | | |
 |---|---|
@@ -58,6 +60,7 @@ A complete 70 cm satellite radio on an 85 x 47 mm board: sub-GHz SoC, 2 W power 
 | Safety | PA power through a TPS2065C load switch: off by default, with a hardware TX_INHIBIT line that overrides the MCU |
 | Reliability | MAX6369 external watchdog, status LED |
 | Interfaces | Hirose U.FL antenna port, 16-pin OBC header (5 V, I2C, UART, TX_INHIBIT, NRST), 10-pin SWD, antenna-board detect port |
+| RF test access | Two unfitted U.FL test ports with 0 Ω links (PA output, low-pass filter input), so each stage can be measured on its own during bring-up |
 | PCB | 4-layer, 85 x 47 mm, four plated M3 mounting holes, JLCPCB JLC04161H-7628 impedance-controlled stack-up |
 
 ### Schematic
