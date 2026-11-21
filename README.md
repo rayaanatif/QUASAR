@@ -117,6 +117,10 @@ A deployable turnstile: two crossed dipoles fed 90° apart for circular polarisa
 | RF connectors | Hirose U.FL: one input from the transceiver, four element outputs |
 | PCB | 4-layer, 87 x 87 mm, JLC04161H-7628 stack-up, four M3 structure holes, 2.2 mm unplated pivot holes |
 
+### Schematic
+
+[QUASAR_ANT_schematic.pdf](hardware/antenna/QUASAR_ANT_schematic.pdf): the antenna feed board on one sheet: 90° hybrid, two dipole baluns, isolated-port load and detector, burn-wire release and connectors.
+
 ### Layout
 
 | Layer | Use |
@@ -157,6 +161,7 @@ A deployable turnstile: two crossed dipoles fed 90° apart for circular polarisa
 
 ```
 hardware/transceiver/   transceiver schematic (PDF)
+hardware/antenna/       antenna board schematic (PDF)
 images/transceiver/     transceiver 3D view and layer screenshots
 images/antenna/         antenna board 3D view and layer screenshots
 images/module/          renders of the assembled module (stowed, deployed, exploded)
